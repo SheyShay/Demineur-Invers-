@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Memory JS</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Jeu du demineur inversé</h1>
+        <p>Objectif : trouver la bombe en un minimun d'essais</p>
+        <p id="tries"></p>
+    </header>
+
+    <div class="board">
+        <div class="row" id="row-0">
+            <div class="tile" id="card1" onclick="doClick(1)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNW2NxEQxAKkQGQ1BLLIlIURnQANj_jatR-w&usqp=CAU" id="image1"></div>
+            <div class="tile" id="card2" onclick="doClick(2)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNW2NxEQxAKkQGQ1BLLIlIURnQANj_jatR-w&usqp=CAU" id="image2" ></div>
+            <div class="tile" id="card3" onclick="doClick(3)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNW2NxEQxAKkQGQ1BLLIlIURnQANj_jatR-w&usqp=CAU" id="image3"></div>
+            <div class="tile" id="card4" onclick="doClick(4)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNW2NxEQxAKkQGQ1BLLIlIURnQANj_jatR-w&usqp=CAU" id="image4"></div>
+        </div>
+        <div class="row" id="row-1">
+            <div class="tile" id="card5" onclick="doClick(5)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNW2NxEQxAKkQGQ1BLLIlIURnQANj_jatR-w&usqp=CAU" id="image5"></div>
+            <div class="tile" id="card6" onclick="doClick(6)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNW2NxEQxAKkQGQ1BLLIlIURnQANj_jatR-w&usqp=CAU" id="image6"></div>
+            <div class="tile" id="card7" onclick="doClick(7)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNW2NxEQxAKkQGQ1BLLIlIURnQANj_jatR-w&usqp=CAU" id="image7"></div>
+            <div class="tile" id="card8" onclick="doClick(8)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNW2NxEQxAKkQGQ1BLLIlIURnQANj_jatR-w&usqp=CAU" id="image8"></div>
+        </div>
+        <div class="row" id="row-2">
+            <div class="tile" id="card9" onclick="doClick(9)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNW2NxEQxAKkQGQ1BLLIlIURnQANj_jatR-w&usqp=CAU" id="image9"></div>
+            <div class="tile" id="card10" onclick="doClick(10)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNW2NxEQxAKkQGQ1BLLIlIURnQANj_jatR-w&usqp=CAU" id="image10"></div>
+            <div class="tile" id="card11" onclick="doClick(11)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNW2NxEQxAKkQGQ1BLLIlIURnQANj_jatR-w&usqp=CAU" id="image11"></div>
+            <div class="tile" id="card12" onclick="doClick(12)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNW2NxEQxAKkQGQ1BLLIlIURnQANj_jatR-w&usqp=CAU" id="image12"></div>
+        </div>
+        <div class="row" id="row-3">
+            <div class="tile" id="card13" onclick="doClick(13)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNW2NxEQxAKkQGQ1BLLIlIURnQANj_jatR-w&usqp=CAU" id="image13"></div>
+            <div class="tile" id="card14" onclick="doClick(14)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNW2NxEQxAKkQGQ1BLLIlIURnQANj_jatR-w&usqp=CAU" id="image14"></div>
+            <div class="tile" id="card15" onclick="doClick(15)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNW2NxEQxAKkQGQ1BLLIlIURnQANj_jatR-w&usqp=CAU" id="image15"></div>
+            <div class="tile" id="card16" onclick="doClick(16)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNW2NxEQxAKkQGQ1BLLIlIURnQANj_jatR-w&usqp=CAU" id="image16"></div>
+        </div>
+    </div>
+</body>
+</html>
